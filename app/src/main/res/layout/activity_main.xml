@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="18dp"
+            android:background="@color/colorPrimaryDark"
+            android:src="@drawable/addphoto" />
+
+        <EditText
+            android:id="@+id/edtName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageView"
+            android:layout_centerHorizontal="true"
+            android:ems="12"
+            android:hint="Name" />
+
+        <EditText
+            android:id="@+id/edtRollno"
+            android:layout_below="@id/edtName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:ems="12"
+            android:hint="Roll no" />
+
+        <EditText
+            android:id="@+id/edtPhn"
+            android:layout_below="@id/edtRollno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:ems="12"
+            android:hint="Mobile number"
+            />
+        <EditText
+            android:id="@+id/edtCgpa"
+            android:layout_below="@id/edtPhn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:ems="12"
+            android:hint="CGPA" />
+
+        <EditText
+            android:id="@+id/edtAttend"
+            android:layout_below="@id/edtCgpa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:ems="12"
+            android:hint="Attendance" />
+
+        <EditText
+            android:id="@+id/edtS1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edtAttend"
+
+            android:ems="5"
+            android:hint="Sem-1" />
+        <EditText
+            android:id="@+id/edtS2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edtAttend"
+            android:layout_toRightOf="@id/edtS1"
+            android:ems="5"
+            android:hint="Sem-2"/>
+        <EditText
+            android:id="@+id/edtS3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edtAttend"
+            android:layout_toRightOf="@id/edtS2"
+            android:ems="5"
+            android:hint="Sem-3"/>
+        <EditText
+            android:id="@+id/edtS4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edtS1"
+
+            android:ems="5"
+            android:hint="Sem-4"/>
+        <EditText
+            android:id="@+id/edtS5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edtS2"
+            android:layout_toRightOf="@id/edtS4"
+            android:ems="5"
+            android:hint="Sem-5"/>
+        <EditText
+            android:id="@+id/edtS6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edtS2"
+            android:layout_toRightOf="@id/edtS5"
+            android:ems="5"
+            android:hint="Sem-6"/>
+        <EditText
+            android:id="@+id/edtS7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edtS4"
+            android:ems="5"
+            android:hint="Sem-7"/>
+        <EditText
+            android:id="@+id/edtS8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edtS5"
+            android:layout_toRightOf="@id/edtS7"
+            android:ems="5"
+            android:hint="Sem-8"/>
+
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_below="@id/edtS7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:minWidth="160dp"
+            android:text="Save Record"
+            style="@style/Base.Widget.AppCompat.Button.Colored"/>
+        <Button
+            android:id="@+id/btnList"
+            android:layout_below="@id/btnAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:minWidth="160dp"
+            android:text="View Records"
+            style="@style/Base.Widget.AppCompat.Button.Colored"/>
+
+
+
+
+
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+</ScrollView>
